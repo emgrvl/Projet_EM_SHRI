@@ -7,6 +7,7 @@ using namespace std;
 
 
 int main() {
+    cout << "emeu est trop belle" << endl;
     Montagne Himalaya(3, 3, 0.4, 3, 3);
     ChampPotentiels CP(30,30,30,20/29);
     CP.set_xyz();
