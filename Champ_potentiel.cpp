@@ -64,3 +64,17 @@ void ChampPotentiels:: set_value_y(double y,int j){
 void ChampPotentiels:: set_value_z(double z,int k){
     Z.push_back(z);
 }
+
+// autre version pour initialiser les tableaux X,Y et Z
+void Champ_potentiel:: set_x_y_z(){
+
+    for(int i(0); i < Nx; ++i){
+        X.push_back(i*lambda);
+    }
+    for(int j(0); j < Ny; ++j){
+        Y.push_back(j*lambda - (lambda*(Ny-1))/2);
+    }
+    for(int k(0); k < Nz; ++k){
+        Z.push_back(k*lambda);
+    }
+}
